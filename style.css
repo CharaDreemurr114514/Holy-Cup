@@ -1,0 +1,54 @@
+/* 清除默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 容器铺满整个页面，设置背景图 */
+.container {
+    /* 100%视口高度，铺满屏幕 */
+    height: 100vh;
+    /* 背景图设置：路径、覆盖方式、居中、固定（滚动不移动） */
+    background: url("background.webp") no-repeat center center;
+    /* 背景图自适应屏幕 */
+    background-size: cover;
+    /* 让按钮居中（flex布局） */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 报名按钮样式 */
+.btn {
+    /* 按钮样式重置（去掉a标签默认下划线） */
+    text-decoration: none;
+    /* 按钮背景色（半透明黑色，适配背景） */
+    background-color: rgba(255, 0, 0, 0.8);
+    /* 文字颜色 */
+    color: white;
+    /* 内边距：上下15px，左右40px（控制按钮大小） */
+    padding: 15px 40px;
+    /* 圆角 */
+    border-radius: 50px;
+    /* 字体大小 */
+    font-size: 20px;
+    /* 鼠标悬浮变成手型 */
+    cursor: pointer;
+    /* 阴影效果 */
+    box-shadow: 0 4px 15px rgba(0, 122, 255, 0.5);
+    /* 点击无边框 */
+    border: none;
+    /* 过渡动画（悬浮效果更丝滑） */
+    transition: all 0.3s ease;
+}
+
+/* 鼠标悬浮按钮效果 */
+.btn:hover {
+    /* 背景色加深 */
+    background-color: rgb(255, 0, 0);
+    /* 轻微放大 */
+    transform: scale(1.05);
+    /* 阴影加重 */
+    box-shadow: 0 6px 20px rgba(0, 122, 255, 0.7);
+}
