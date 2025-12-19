@@ -21,8 +21,9 @@ body {
 /* 容器铺满整个页面，设置背景图 */
 .container {
     height: 100vh;
-    background: url("background.webp") no-repeat center center;
-    background-size: cover;
+    background: url("preview.jpg") no-repeat center center;
+    background-size: 70%;
+    background-position: center top;
     display: flex;
     flex-direction: column; /* 让文字和按钮垂直居中 */
     justify-content: center;
